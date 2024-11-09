@@ -27,7 +27,7 @@ The Python code for performing the aforementioned tasks is provided in three iPy
 - `metric`: the metric name used in the raster file name, formatted as *plotID_metric_res.tif*.
 - `res`: the grid resolution of the raster, also found in the raster file name (*plotID_metric_res.tif*).
 
-Metric values are returned in a Pandas DataFrame, which can be saved as a csv file. The notebook also includes the `replace_nans` function for handling NaN values in the rasters, occurring where no hits were recorded. For the metrics *Entropy Variability* and *Percent Hits Above Mean Height Variability*, NaNs are replaced with 0. For all other metrics, NaNs are filled with the average of neighboring non-NaN cells, or, if all neighboring cells are empty, the gap is set to the nearest non-NaN pixel value.
+ Metric values are returned in a Pandas DataFrame, which can be saved as a csv file. The notebook also includes the `replace_nans` function for handling NaN values     in the rasters, occurring where no hits were recorded. For the metrics *Entropy Variability* and *Percent Hits Above Mean Height Variability*, NaNs are replaced with  0. For all other metrics, NaNs are filled with the average of neighboring non-NaN cells, or, if all neighboring cells are empty, the gap is set to the nearest non-    NaN pixel value.
 
 2) `CanRug_3D.ipynb`:
 This notebook contains code for computing the three *Canopy Rugosity* variants. The `get_Std_arr` function takes an RData file containing a grid of voxel hits and outputs a grid of *StdBin* values (Atkins et al., 2018) as a NumPy array. NaN values are set to 0. The resulting metric values are returned in a Pandas DataFrame, which can then saved as a csv file. 
@@ -40,9 +40,9 @@ This notebook contains code for implementing the PLS-CV + RFE approach for model
 - `max_comp`: The maximum number of components to be used in PLS regression.
 - `cv_fold`: Number cross-validation folds used in PLS-CV.
 
-This function returns several outputs, including the coefficient of determination, cross-validated $R^{2}$, mean squared error, names and coefficients of selected metrics, and number of PLS components in the best-performing model.
+ This function returns several outputs, including the coefficient of determination, cross-validated $R^{2}$, mean squared error, names and coefficients of selected     metrics, and number of PLS components in the best-performing model.
 
-The Python packages necessary for running all functions are provided in the `Dependencies.txt` file.
+ The Python packages necessary for running all functions are provided in the `Dependencies.txt` file.
 
 ## Plot point cloud data
 
