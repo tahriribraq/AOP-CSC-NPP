@@ -6,7 +6,7 @@ This repository contains:
 
 # Description
 
-The lidR package (Roussel et al., 2020) was used to compute *Rumple* and generate grids for all other 3D CSC metrics using R version 4.3.1. Python 3.10.11 was used to compute the three variants of each metric from the generated rasters and implement the PLS-CV + RFE approach for identifying top-performing CSC-NPP models. Due to size constraints, the preprocessed plot point clouds are provided in three separate zip folders, and field-measured NPP data is provided in the "plot_NPP" CSV file.
+The lidR package (Roussel et al., 2020) was used to compute *Rumple* and generate grids for all other 3D CSC metrics using R version 4.3.1. Python 3.10.11 was used to compute the three variants of each metric from the generated rasters and implement the PLS-CV + RFE approach for identifying top-performing CSC-NPP models. Due to size constraints, the preprocessed plot point clouds are provided in three separate zip folders. Field-measured NPP data is provided in the "plot_NPP" CSV file.
 
 ## R code
 
