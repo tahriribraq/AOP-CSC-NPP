@@ -3,7 +3,7 @@ library(lidR)
 library(raster)
 
 
-# Rumple
+# Compute Rumple index
 
 las_dir <- "input_dir" # Replace input_dir with path to las files
 # retrieve DTM-normalized point clouds
