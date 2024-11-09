@@ -1,12 +1,8 @@
-This file lists all the R and Python packages, along with their respective versions, used in Siddiqui et al. (2024).
-
 R packages:
-
 lidR=4.0.3
 raster=3.6.23
 
-Python:
-
+Python packages:
 numpy=1.24.2
 pandas=2.1.2
 os=3.10
