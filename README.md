@@ -51,7 +51,7 @@ All 49 preprocessed plot point clouds used in Siddiqui et al. (2024) are provide
 
 ## NPP data
 
-NPP data for all 49 NEON forest plots used in Siddiqui et al. (2024) are provided in the plot_NPP.csv file.
+NPP data for all 49 NEON forest plots used in Siddiqui et al. (2024) are provided in the *plot_NPP.csv* file.
 
 ## References
 1. Roussel J, Auty D, Coops NC, Tompalski P, Goodbody TR, Meador AS, Bourdon J, de Boissieu F, Achim A (2020). “lidR: An R package for analysis of Airborne Laser Scanning (ALS) data.” Remote Sensing of Environment, 251, 112061. ISSN 0034-4257, doi:10.1016/j.rse.2020.112061, https://www.sciencedirect.com/science/article/pii/S0034425720304314.
