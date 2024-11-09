@@ -11,9 +11,9 @@ The lidR package (Roussel et al., 2020) was used to compute *Rumple* and generat
 ## R code
 
 The `3D_CSC_metrics.R` file contains code for: 
-1) Computing the *Rumple* index of each plot and writing it to a csv file.
-2) Generating rasters for each metric at the user-specified resolution and writing the raster to the output path as a tif file with the naming format *plotID_metric_res.tif* where *plotID* corresponds to the plot number of the NEON forest plot, *metric* corresponds to the metric derived from the raster, and *res* corresponds to the user-specified grid resolution.
-3) Generating voxelized hit grids for computing *Canopy Rugosity* at 1m vertical resolution and user-specified horizontal resolution, and writing the output to the specified path as an RData file.
+1) Computing the *Rumple* index for each plot and export the results a csv file.
+2) Generating rasters for each metric at a user-specified resolution and saving them as `.tif` files in the specified output path. Raster files follow the naming format *plotID_metric_res.tif* where *plotID* corresponds to the plot number of the NEON forest plot, *metric* corresponds to the metric derived from the raster, and *res* corresponds to the grid resolution chosen by the user.
+3) Generating voxelized hit grids for computing *Canopy Rugosity* at 1m vertical resolution and a user-specified horizontal resolution. The output is saved as an RData file to the specified output path.
 
 The R packages necessary for running `3D_CSC_metrics.R` are provided in the `Dependencies.txt` file.
 
