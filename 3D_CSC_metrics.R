@@ -109,14 +109,13 @@ for (file in las_files) {
 
 # Generate voxel hit grids for computing Canopy Rugosity 
 
-n <- 10 # voxel x and y dimension
-m <- 1 # voxel z dimension
+n <- 10 # specify voxel x and y dimension
 
 for (file in las_files) {
   las <- readLAS(files = file)
   las <- filter_poi(las, Classification != 2L) # filter out ground points 
   file_name <- tools::file_path_sans_ext(basename(file))
-  vox_hits <- voxel_metrics(las, ~list(N = length(Z)), c(n,m)) # number of hits in nxnxm m voxels
-  out_path <- file.path(out_dir, paste0(file_name, "_", n, "_", n, "_", m, ".RData"))
+  vox_hits <- voxel_metrics(las, ~list(N = length(Z)), c(n,1)) # number of hits in nxnx1 m voxels
+  out_path <- file.path(out_dir, paste0(file_name, "_", m, ".RData"))
   save(vox_hits, file = out_path)
 }
