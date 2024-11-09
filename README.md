@@ -15,7 +15,7 @@ The `3D_CSC_metrics.R` file contains the code for:
 2) Generating rasters for each metric at the user-specified resolution and writing the raster to the output path as a tif file with the naming format "plotID_metric_res" where the plot number of the forest plot is given by "plotID, the metric derived from the raster is given by "metric", and the grid resolution is given by "res".
 3) Generating voxelized hit grids for computing Canopy Rugosity at 1m vertical resolution and user-specified horizontal resolution, and writing the output to the specified path as an RData file.
 
-The R packages necessary for running `3D_CSC_metrics.R` are provided in the R_dependencies.txt file.
+The R packages necessary for running `3D_CSC_metrics.R` are provided in the `R_dependencies.txt` file.
 
 ## Python code
 
